@@ -4,6 +4,7 @@ import Footer from "../section/Footer";
 import Hero from "../section/Hero";
 import Menu from "../section/Menu";
 import TodaySpecial from "../section/TodaySpecial";
+import { assetUrl } from "../config";
 
 const HomePage = () => {
   return (
@@ -12,7 +13,7 @@ const HomePage = () => {
       <TodaySpecial />
       <div className="relative w-full h-[40vh] sm:[30vh] lg:[20vh]">
         <img
-          src="/assets/luxurybg(1) 1.png"
+          src={assetUrl("assets/luxurybg(1) 1.png")}
           alt="image divider"
           className="w-full h-full object-cover"
         />
@@ -28,7 +29,7 @@ const HomePage = () => {
       <DiningEvent />
       <div className="relative w-full h-[40vh] sm:[30vh] lg:[20vh]">
         <img
-          src="/assets/salmon 1.png"
+          src={assetUrl("assets/salmon 1.png")}
           alt="image divider"
           className="w-full h-full object-cover"
         />

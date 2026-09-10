@@ -3,6 +3,7 @@ import Button from "../components/Button";
 import Paragraph from "../components/Paragraph";
 import Subtitle from "../components/Subtitle";
 import Title from "../components/Title";
+import { assetUrl } from "../config";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -71,7 +72,7 @@ const About = () => {
             whileHover={{ scale: 1.02 }}
           >
             <motion.img
-              src="/assets/chef4 1.png"
+              src={assetUrl("assets/chef4 1.png")}
               alt="About Us"
               className="h-full object-cover w-full"
               whileHover={{ scale: 1.1 }}
@@ -84,7 +85,7 @@ const About = () => {
             whileHover={{ scale: 1.02 }}
           >
             <motion.img
-              src="/assets/chef1.png"
+              src={assetUrl("assets/chef1.png")}
               alt="About Us"
               className="h-full w-full object-cover"
               whileHover={{ scale: 1.1 }}
@@ -97,7 +98,7 @@ const About = () => {
             whileHover={{ scale: 1.02 }}
           >
             <motion.img
-              src="/assets/chef2.png"
+              src={assetUrl("assets/chef2.png")}
               alt="About Us"
               className="h-full w-full object-cover"
               whileHover={{ scale: 1.1 }}

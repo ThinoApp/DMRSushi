@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Button from "../components/Button";
 import { useState } from "react";
 import LinkItem from "../components/LinkItem";
+import { assetUrl } from "../config";
 
 const menus = ["Menu", "Fine Dining", "About", "Contact"];
 
@@ -24,7 +25,7 @@ const HeaderDesktop = () => {
       className="relative hidden lg:flex items-center justify-between z-50"
     >
       <motion.img
-        src="/assets/logo.png"
+        src={assetUrl("assets/logo.png")}
         alt="logo"
         className="size-15"
         whileHover={{ scale: 1.1, rotate: 5 }}
@@ -77,7 +78,7 @@ const HeaderMobile = () => {
   return (
     <div className=" absolute top-2 left-0 px-5 z-10 w-full lg:hidden flex flex-row justify-between items-center">
       <motion.img
-        src="/assets/logo.png"
+        src={assetUrl("assets/logo.png")}
         alt="Logo"
         className="size-14 object-cover sm:size-20"
         initial={{ opacity: 0, x: -20 }}
@@ -112,7 +113,7 @@ const HeaderMobile = () => {
             className="fixed top-0 left-0 h-screen w-full px-5 py-2 bg-black/50 backdrop-blur-xs backdrop-saturate-50"
           >
             <motion.img
-              src="/assets/logo.png"
+              src={assetUrl("assets/logo.png")}
               alt="Logo"
               className="size-14 object-cover sm:size-20"
               initial={{ opacity: 0, scale: 0.8 }}
