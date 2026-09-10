@@ -4,10 +4,14 @@ import Heading from "../components/Heading";
 import Paragraph from "../components/Paragraph";
 import Subtitle from "../components/Subtitle";
 import Header from "./Header";
+import { assetUrl } from "../config";
 
 const Hero = () => {
   return (
-    <div className="relative w-full h-screen  px-5 py-2 bg-[url('/assets/hero.png')] bg-cover bg-center sm:px-10 sm:py-5 lg:px-20 lg:py-2 flex flex-col">
+    <div
+      className="relative w-full h-screen px-5 py-2 bg-cover bg-center sm:px-10 sm:py-5 lg:px-20 lg:py-2 flex flex-col"
+      style={{ backgroundImage: `url("${assetUrl("assets/hero.png")}")` }}
+    >
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
